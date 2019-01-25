@@ -26,37 +26,37 @@
 ######################################################################
 
 set -ex
-sudo apt-get update
-sudo apt-get install -y \
-    apt-transport-https \
-    build-essential \
-    ca-certificates \
-    cmake \
-    curl \
-    git \
-    libatlas-base-dev \
-    libcurl4-openssl-dev \
-    libjemalloc-dev \
-    liblapack-dev \
-    libopenblas-dev \
-    libopencv-dev \
-    libzmq3-dev \
-    ninja-build \
-    python-dev \
-    python3-dev \
-    software-properties-common \
-    sudo \
-    unzip \
-    virtualenv \
-    wget
+# sudo apt-get update
+# sudo apt-get install -y \
+#    apt-transport-https \
+#    build-essential \
+#    ca-certificates \
+#    cmake \
+#    curl \
+#    git \
+#    libatlas-base-dev \
+#    libcurl4-openssl-dev \
+#    libjemalloc-dev \
+#    liblapack-dev \
+#    libopenblas-dev \
+#    libopencv-dev \
+#    libzmq3-dev \
+#    ninja-build \
+#    python-dev \
+#    python3-dev \
+#    software-properties-common \
+#    sudo \
+#    unzip \
+#    virtualenv \
+#    wget
 
-wget -nv https://bootstrap.pypa.io/get-pip.py
-echo "Installing for Python 3..."
-sudo python3 get-pip.py
-pip3 install --user -r requirements.txt
-echo "Installing for Python 2..."
-sudo python2 get-pip.py
-pip2 install --user -r requirements.txt
+# wget -nv https://bootstrap.pypa.io/get-pip.py
+# echo "Installing for Python 3..."
+# sudo python3 get-pip.py
+# pip3 install --user -r requirements.txt
+# echo "Installing for Python 2..."
+# sudo python2 get-pip.py
+# pip2 install --user -r requirements.txt
 
 cd ../../
 
